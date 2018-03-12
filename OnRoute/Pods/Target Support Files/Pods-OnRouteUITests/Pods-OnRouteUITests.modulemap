@@ -1,0 +1,6 @@
+framework module Pods_OnRouteUITests {
+  umbrella header "Pods-OnRouteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
