@@ -10,7 +10,12 @@ import UIKit
 import MapKit
 import CoreLocation
 class ViewController: UIViewController ,CLLocationManagerDelegate{
-
+    @IBAction func searchBtn(_ sender: Any) {
+        let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "NewsInventoryCollectionViewController") as! NewsInventoryCollectionViewController
+        let navigationController = UINavigationController(rootViewController: newViewController)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     let locationManager = CLLocationManager()

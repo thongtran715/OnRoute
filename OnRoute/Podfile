@@ -9,6 +9,9 @@ pod 'BButton'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+
 
   # Pods for OnRoute
 

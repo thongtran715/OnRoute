@@ -9,8 +9,8 @@
 import UIKit
 import Stripe
 class MenuViewController: UIViewController {
-    var arrMenuTitles = ["Payment","Carts","Favorite", "Upcoming Route","Help","Legal","Settings","Become Router"]
-    var arrMenuImages = [UIImage(named: "payment"),UIImage(named: "cart"),UIImage(named: "favorite"),UIImage(named: "truck"),UIImage(named: "help"),UIImage(named: "legal"),UIImage(named: "setting"),UIImage(named: "router")]
+    var arrMenuTitles = ["Payment","Carts", "Upcoming Route","Help","Legal","Settings","Become Router"]
+    var arrMenuImages = [UIImage(named: "payment"),UIImage(named: "cart"),UIImage(named: "truck"),UIImage(named: "help"),UIImage(named: "legal"),UIImage(named: "setting"),UIImage(named: "router")]
     
     @IBOutlet weak var imageProfile: UIImageView!
     
@@ -19,7 +19,16 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         imageProfile.layer.cornerRadius = self.imageProfile.frame.size.width/2
         imageProfile.clipsToBounds = true
-        // Do any additional setup after loading the view.
+ 
+//        // Do any additional setup after loading the view.
+//        var inven = Inventory(currUid: "1", in_name: "Mattress", in_ownwer_id: "2", in_price: "4.3", in_des: "This is greate")
+//        if inven.write_inventory_to_fb() == 1 {
+//
+//        }
+//        var cart  = Carts(currentUser: "2", inId: "-L7VwU7jtSQ6gFSrlGE7")
+//        cart.write_cart_to_db()
+//
+        
     }
 
 
