@@ -32,11 +32,23 @@ class NewsInventoryCollectionViewController : UICollectionViewController
             button.setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
         }
         button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        button.addTarget(self, action: #selector(CartViewController.ClickedCancel), for: .touchUpInside)
+        button.addTarget(self, action: #selector(NewsInventoryCollectionViewController.ClickedCancel), for: .touchUpInside)
         let barButton = UIBarButtonItem(customView: button)
         navigationItem.leftBarButtonItem = barButton
     }
-    
+    private func setUpRightButton () {
+        let button  = UIButton(type: .custom)
+        if let image = UIImage(named: "switch") {
+            button.setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
+        }
+        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        button.addTarget(self, action: #selector(NewsInventoryCollectionViewController.switchBtn), for: .touchUpInside)
+        let barButton = UIBarButtonItem(customView: button)
+        navigationItem.leftBarButtonItem = barButton
+    }
+    @objc func switchBtn() {
+        print(2)
+    }
     @objc func ClickedCancel () {
         print (1)
         self.dismiss(animated: true, completion: nil)
