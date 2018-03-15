@@ -26,6 +26,18 @@
 		42A3DE8B2058F382007B416E /* InventoryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE892058F382007B416E /* InventoryLayout.swift */; };
 		42A3DE8D2058F38A007B416E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE8C2058F38A007B416E /* Post.swift */; };
 		42A3DE8F2058F392007B416E /* NewsInventoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE8E2058F392007B416E /* NewsInventoryCollectionViewController.swift */; };
+		42A3DE9320590D9C007B416E /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE9220590D9C007B416E /* ServicesViewController.swift */; };
+		42A3DE952059A8BC007B416E /* DetailInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE942059A8BC007B416E /* DetailInventoryViewController.swift */; };
+		42A3DE982059A905007B416E /* SellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE972059A905007B416E /* SellerTableViewCell.swift */; };
+		42A3DE9A2059A912007B416E /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE992059A912007B416E /* MapTableViewCell.swift */; };
+		42A3DE9E2059ABCA007B416E /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE9D2059ABCA007B416E /* PriceTableViewCell.swift */; };
+		42A3DEA02059ABD3007B416E /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DE9F2059ABD3007B416E /* DetailTableViewCell.swift */; };
+		42A3DEA22059BBB8007B416E /* InventoryImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEA12059BBB8007B416E /* InventoryImageViewController.swift */; };
+		42A3DEA42059BC39007B416E /* InventoryImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEA32059BC39007B416E /* InventoryImagesPageViewController.swift */; };
+		42A3DEA62059C3A2007B416E /* InventoryImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEA52059C3A2007B416E /* InventoryImageHeaderView.swift */; };
+		42A3DEAE205A699B007B416E /* CommentsInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEAD205A699B007B416E /* CommentsInventoryTableViewController.swift */; };
+		42A3DEB1205A69FF007B416E /* CommentsInventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEB0205A69FF007B416E /* CommentsInventoryTableViewCell.swift */; };
+		42A3DEB3205A6D0E007B416E /* DetailCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEB2205A6D0E007B416E /* DetailCommentsTableViewCell.swift */; };
 		556867A292684B5B73A2AB8F /* Pods_OnRouteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6478FDA664893728AA6BCDD8 /* Pods_OnRouteUITests.framework */; };
 		7731F26F61C8872D49128072 /* Pods_OnRouteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F2678CDE0E45D0B0BCAC4A /* Pods_OnRouteTests.framework */; };
 		D1A9A6037D1EEDA01E4DB5F2 /* Pods_OnRoute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA99E39759E8D59B230FA39F /* Pods_OnRoute.framework */; };
@@ -76,6 +88,18 @@
 		42A3DE892058F382007B416E /* InventoryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryLayout.swift; sourceTree = "<group>"; };
 		42A3DE8C2058F38A007B416E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		42A3DE8E2058F392007B416E /* NewsInventoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsInventoryCollectionViewController.swift; sourceTree = "<group>"; };
+		42A3DE9220590D9C007B416E /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		42A3DE942059A8BC007B416E /* DetailInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInventoryViewController.swift; sourceTree = "<group>"; };
+		42A3DE972059A905007B416E /* SellerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerTableViewCell.swift; sourceTree = "<group>"; };
+		42A3DE992059A912007B416E /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		42A3DE9D2059ABCA007B416E /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
+		42A3DE9F2059ABD3007B416E /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		42A3DEA12059BBB8007B416E /* InventoryImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImageViewController.swift; sourceTree = "<group>"; };
+		42A3DEA32059BC39007B416E /* InventoryImagesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImagesPageViewController.swift; sourceTree = "<group>"; };
+		42A3DEA52059C3A2007B416E /* InventoryImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImageHeaderView.swift; sourceTree = "<group>"; };
+		42A3DEAD205A699B007B416E /* CommentsInventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInventoryTableViewController.swift; sourceTree = "<group>"; };
+		42A3DEB0205A69FF007B416E /* CommentsInventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInventoryTableViewCell.swift; sourceTree = "<group>"; };
+		42A3DEB2205A6D0E007B416E /* DetailCommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentsTableViewCell.swift; sourceTree = "<group>"; };
 		4F8869A347614EAEAFE24665 /* Pods-OnRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnRoute.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnRoute/Pods-OnRoute.debug.xcconfig"; sourceTree = "<group>"; };
 		6478FDA664893728AA6BCDD8 /* Pods_OnRouteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnRouteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCC2915EC5F7A334EA4A27D /* Pods-OnRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnRoute.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnRoute/Pods-OnRoute.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +165,8 @@
 		4224434B20586AD3007F887F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				42A3DEAF205A69E6007B416E /* CommentsInventoryCell */,
+				42A3DE962059A8DE007B416E /* Detail Inventory View */,
 				4239FF8A20559723003A0999 /* MenuTableViewCell.swift */,
 				42A3DE882058F381007B416E /* InventoryCell.swift */,
 				42A3DE892058F382007B416E /* InventoryLayout.swift */,
@@ -176,16 +202,13 @@
 		4239FF52205595C6003A0999 /* OnRoute */ = {
 			isa = PBXGroup;
 			children = (
+				42A3DEA92059CC13007B416E /* Supports */,
 				4239FF53205595C6003A0999 /* AppDelegate.swift */,
-				4239FF85205595E3003A0999 /* SWRevealViewController.h */,
-				4239FF86205595E3003A0999 /* SWRevealViewController.m */,
 				4239FF57205595C7003A0999 /* Main.storyboard */,
+				4239FF84205595E2003A0999 /* OnRoute-Bridging-Header.h */,
+				4239FF62205595C7003A0999 /* Info.plist */,
 				4239FF5D205595C7003A0999 /* Assets.xcassets */,
 				4239FF5F205595C7003A0999 /* LaunchScreen.storyboard */,
-				4239FF62205595C7003A0999 /* Info.plist */,
-				4239FF5A205595C7003A0999 /* OnRoute.xcdatamodeld */,
-				42244343205858E7007F887F /* GoogleService-Info.plist */,
-				4239FF84205595E2003A0999 /* OnRoute-Bridging-Header.h */,
 			);
 			path = OnRoute;
 			sourceTree = "<group>";
@@ -211,12 +234,73 @@
 		4239FF8C2055A56E003A0999 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				42A3DEAA205A68C5007B416E /* CommentsInventoryController */,
+				42A3DEA82059CBDC007B416E /* News Inventory Controller */,
+				42A3DEA72059CB9E007B416E /* Detail Inventory Controllers */,
 				4239FF88205596E0003A0999 /* MenuViewController.swift */,
-				42A3DE8E2058F392007B416E /* NewsInventoryCollectionViewController.swift */,
 				4239FF8D2055A7E1003A0999 /* CartViewController.swift */,
 				4239FF55205595C7003A0999 /* ViewController.swift */,
+				42A3DE9220590D9C007B416E /* ServicesViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		42A3DE962059A8DE007B416E /* Detail Inventory View */ = {
+			isa = PBXGroup;
+			children = (
+				42A3DE972059A905007B416E /* SellerTableViewCell.swift */,
+				42A3DE992059A912007B416E /* MapTableViewCell.swift */,
+				42A3DE9D2059ABCA007B416E /* PriceTableViewCell.swift */,
+				42A3DE9F2059ABD3007B416E /* DetailTableViewCell.swift */,
+				42A3DEA52059C3A2007B416E /* InventoryImageHeaderView.swift */,
+				42A3DEB2205A6D0E007B416E /* DetailCommentsTableViewCell.swift */,
+			);
+			path = "Detail Inventory View";
+			sourceTree = "<group>";
+		};
+		42A3DEA72059CB9E007B416E /* Detail Inventory Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42A3DEA12059BBB8007B416E /* InventoryImageViewController.swift */,
+				42A3DEA32059BC39007B416E /* InventoryImagesPageViewController.swift */,
+				42A3DE942059A8BC007B416E /* DetailInventoryViewController.swift */,
+			);
+			path = "Detail Inventory Controllers";
+			sourceTree = "<group>";
+		};
+		42A3DEA82059CBDC007B416E /* News Inventory Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42A3DE8E2058F392007B416E /* NewsInventoryCollectionViewController.swift */,
+			);
+			path = "News Inventory Controller";
+			sourceTree = "<group>";
+		};
+		42A3DEA92059CC13007B416E /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				4239FF85205595E3003A0999 /* SWRevealViewController.h */,
+				4239FF5A205595C7003A0999 /* OnRoute.xcdatamodeld */,
+				42244343205858E7007F887F /* GoogleService-Info.plist */,
+				4239FF86205595E3003A0999 /* SWRevealViewController.m */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		42A3DEAA205A68C5007B416E /* CommentsInventoryController */ = {
+			isa = PBXGroup;
+			children = (
+				42A3DEAD205A699B007B416E /* CommentsInventoryTableViewController.swift */,
+			);
+			path = CommentsInventoryController;
+			sourceTree = "<group>";
+		};
+		42A3DEAF205A69E6007B416E /* CommentsInventoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				42A3DEB0205A69FF007B416E /* CommentsInventoryTableViewCell.swift */,
+			);
+			path = CommentsInventoryCell;
 			sourceTree = "<group>";
 		};
 		B6209BABF1DEEDA90FF78BEF /* Frameworks */ = {
@@ -414,18 +498,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OnRoute/Pods-OnRoute-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BButton/BButton.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/ZoomTransitioning/ZoomTransitioning.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZoomTransitioning.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -534,18 +624,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A3DE9A2059A912007B416E /* MapTableViewCell.swift in Sources */,
 				4239FF5C205595C7003A0999 /* OnRoute.xcdatamodeld in Sources */,
 				42A3DE8F2058F392007B416E /* NewsInventoryCollectionViewController.swift in Sources */,
 				4239FF89205596E0003A0999 /* MenuViewController.swift in Sources */,
 				4239FF8E2055A7E1003A0999 /* CartViewController.swift in Sources */,
+				42A3DEA22059BBB8007B416E /* InventoryImageViewController.swift in Sources */,
 				42A3DE8D2058F38A007B416E /* Post.swift in Sources */,
+				42A3DE952059A8BC007B416E /* DetailInventoryViewController.swift in Sources */,
+				42A3DEA42059BC39007B416E /* InventoryImagesPageViewController.swift in Sources */,
 				42244346205860EB007F887F /* Inventory.swift in Sources */,
 				4224434020584E58007F887F /* Carts.swift in Sources */,
+				42A3DE9E2059ABCA007B416E /* PriceTableViewCell.swift in Sources */,
 				4239FF8B20559723003A0999 /* MenuTableViewCell.swift in Sources */,
+				42A3DE9320590D9C007B416E /* ServicesViewController.swift in Sources */,
+				42A3DEAE205A699B007B416E /* CommentsInventoryTableViewController.swift in Sources */,
 				4239FF56205595C7003A0999 /* ViewController.swift in Sources */,
+				42A3DEA62059C3A2007B416E /* InventoryImageHeaderView.swift in Sources */,
 				42A3DE8B2058F382007B416E /* InventoryLayout.swift in Sources */,
 				4239FF54205595C6003A0999 /* AppDelegate.swift in Sources */,
 				4239FF87205595E3003A0999 /* SWRevealViewController.m in Sources */,
+				42A3DE982059A905007B416E /* SellerTableViewCell.swift in Sources */,
+				42A3DEA02059ABD3007B416E /* DetailTableViewCell.swift in Sources */,
+				42A3DEB1205A69FF007B416E /* CommentsInventoryTableViewCell.swift in Sources */,
+				42A3DEB3205A6D0E007B416E /* DetailCommentsTableViewCell.swift in Sources */,
 				42A3DE8A2058F382007B416E /* InventoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

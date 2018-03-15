@@ -9,22 +9,65 @@
 import UIKit
 import AVKit
 import AVFoundation
+import Floaty
 
-class NewsInventoryCollectionViewController : UICollectionViewController
+class NewsInventoryCollectionViewController : UICollectionViewController, FloatyDelegate
 {
     var searchController: UISearchController!
     var posts: [Post]?
-    
+    var fab = Floaty()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.fetchPosts()
         collectionView?.contentInset = UIEdgeInsets(top: 12, left: 4, bottom: 12, right: 4)
         setUpLeftButton()
-        
+        setUpRightButton()
         if let layout = collectionView?.collectionViewLayout as? InventoryLayout {
             layout.delegate = self
         }
+        layoutFAB()
+    }
+    func layoutFAB() {
+        let item = FloatyItem()
+        item.buttonColor = UIColor.blue
+        item.circleShadowColor = UIColor.red
+        item.titleShadowColor = UIColor.blue
+        item.title = "Custom item"
+        item.handler = { item in
+        }
+        
+        fab.addItem(title: "I got a title")
+        fab.addItem("I got a icon", icon: UIImage(named: "icShare"))
+        fab.addItem("titlePosition right?", icon: UIImage(named: "icShare"), titlePosition: .right) { (item) in
+            let alert = UIAlertController(title: "titlePosition right", message: "titlePosition is right", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok...", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            self.fab.close()
+        }
+        fab.addItem("titlePosition nil?", icon: UIImage(named: "icShare"), titlePosition: nil) { (item) in
+            let alert = UIAlertController(title: "titlePosition nil", message: "titlePosition nil will be left", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok...", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            self.fab.close()
+        }
+        fab.addItem("I got a handler", icon: UIImage(named: "icMap")) { item in
+            let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            self.fab.close()
+        }
+        fab.addItem(item: item)
+        fab.sticky = true
+        fab.paddingX = fab.frame.width/2
+        fab.plusColor = UIColor.white
+        fab.buttonColor = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
+        fab.fabDelegate = self
+        
+     
+        
+        self.view.addSubview(fab)
     }
     private func setUpLeftButton () {
         let button  = UIButton(type: .custom)
@@ -44,11 +87,16 @@ class NewsInventoryCollectionViewController : UICollectionViewController
         button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         button.addTarget(self, action: #selector(NewsInventoryCollectionViewController.switchBtn), for: .touchUpInside)
         let barButton = UIBarButtonItem(customView: button)
-        navigationItem.leftBarButtonItem = barButton
+        navigationItem.rightBarButtonItem = barButton
     }
     @objc func switchBtn() {
-        print(2)
-    }
+        let  mainStory = UIStoryboard(name: "Main", bundle: nil)
+        let search = mainStory.instantiateViewController(withIdentifier: "ServicesViewController") as! ServicesViewController
+        UIView.beginAnimations("animation", context: nil)
+        UIView.setAnimationDuration(1.0)
+        self.navigationController!.pushViewController(search, animated: false)
+        UIView.setAnimationTransition(UIViewAnimationTransition.flipFromLeft, for: self.navigationController!.view, cache: false)
+        UIView.commitAnimations()    }
     @objc func ClickedCancel () {
         print (1)
         self.dismiss(animated: true, completion: nil)
@@ -73,7 +121,7 @@ extension NewsInventoryCollectionViewController
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCell", for: indexPath) as! InventoryCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InventoryCell", for: indexPath) as! InventoryCollectionViewCell
         cell.post = self.posts?[indexPath.item]
         return cell
     }
