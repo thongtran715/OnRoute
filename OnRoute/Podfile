@@ -6,7 +6,14 @@ target 'OnRoute' do
   use_frameworks!
 pod 'Stripe'
 pod 'BButton'
-
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+pod "Floaty", "~> 4.0.0"
+pod 'ZoomTransitioning'
+pod 'Cosmos', '~> 15.0'
   # Pods for OnRoute
 
   target 'OnRouteTests' do

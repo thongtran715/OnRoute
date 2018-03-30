@@ -27,7 +27,6 @@ class CartViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         
  
-        
         // Do any additional setup after loading the view.
     }
     private func setUpNavButtions () {
