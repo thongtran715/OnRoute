@@ -10,17 +10,15 @@ import UIKit
 import Cosmos
 class CommentsInventoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var datePosted: UILabel!
+    @IBOutlet weak var rating: CosmosView!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var commentLabelText: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        rating.backgroundColor = .clear
     }
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var commentsText: UILabel!
-    
-    @IBOutlet weak var timePosted: UILabel!
-    @IBOutlet weak var startView: CosmosView!
-    
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

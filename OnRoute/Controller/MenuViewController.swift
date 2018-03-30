@@ -50,7 +50,7 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let revealController: SWRevealViewController = self.revealViewController()
+       
         let cell: MenuTableViewCell = tableView.cellForRow(at: indexPath) as! MenuTableViewCell
         if cell.labelMenu.text == "Payment" {
             let addCardViewController = STPAddCardViewController()

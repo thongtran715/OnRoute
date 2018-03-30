@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import BButton
 class PriceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameInventory: UILabel!
@@ -25,26 +25,29 @@ class PriceTableViewCell: UITableViewCell {
         askOutlet.setTitle("Ask", for: .normal)
         askOutlet.alignImageAndTitleVertically()
         
+
         shareOutlet.setImage(UIImage(named: "share"), for: .normal)
         shareOutlet.setTitle("Share", for: .normal)
         shareOutlet.alignImageAndTitleVertically()
-        
-        
+        checkoutOutlet.layer.cornerRadius = self.checkoutOutlet.frame.height/2
         // Initialization code
     }
 
     
     
     
-    
+        var isAnimated = false
     @IBOutlet weak var askOutlet: UIButton!
     
     @IBAction func askBtn(_ sender: Any) {
         print ("Ask Button ")
     }
-    
+ 
     @IBOutlet weak var addToCartOutlet: UIButton!
     
+    @IBAction func checkoutBtn(_ sender: Any) {
+    }
+    @IBOutlet weak var checkoutOutlet: UIButton!
     @IBAction func addToCartBtn(_ sender: Any) {
     }
     

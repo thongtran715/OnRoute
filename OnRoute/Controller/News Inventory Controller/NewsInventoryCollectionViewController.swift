@@ -69,6 +69,16 @@ class NewsInventoryCollectionViewController : UICollectionViewController, Floaty
         
         self.view.addSubview(fab)
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cell.alpha = 0
+        UIView.animate(withDuration: 2.0) {
+            cell.alpha = 1.0
+
+        }
+    }
+    
+    
     private func setUpLeftButton () {
         let button  = UIButton(type: .custom)
         if let image = UIImage(named: "cancel") {

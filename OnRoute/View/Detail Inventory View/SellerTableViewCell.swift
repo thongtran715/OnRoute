@@ -16,7 +16,7 @@ class SellerTableViewCell: UITableViewCell {
         sellerImage.clipsToBounds = true
         // Initialization code
     }
-
+    var isAnimated = false
     @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var sellerImage: UIImageView!

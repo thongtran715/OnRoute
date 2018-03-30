@@ -16,7 +16,7 @@ class MapTableViewCell: UITableViewCell {
         // Initialization code
     }
     @IBOutlet weak var mapKit: MKMapView!
-    
+        var isAnimated = false
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
