@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         STPPaymentConfiguration.shared().publishableKey = "pk_test_rmXbjbMTFBKaI6KmVaczM9IN"
         FirebaseApp.configure()
+        UITabBar.appearance().tintColor = UIColor( red: CGFloat(255/255.0), green: CGFloat(99/255.0), blue: CGFloat(95/255.0), alpha: CGFloat(1.0) )
+
         return true
     }
 

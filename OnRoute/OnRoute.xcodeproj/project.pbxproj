@@ -35,6 +35,10 @@
 		42A3DEA22059BBB8007B416E /* InventoryImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEA12059BBB8007B416E /* InventoryImageViewController.swift */; };
 		42A3DEA42059BC39007B416E /* InventoryImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEA32059BC39007B416E /* InventoryImagesPageViewController.swift */; };
 		42A3DEA62059C3A2007B416E /* InventoryImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DEA52059C3A2007B416E /* InventoryImageHeaderView.swift */; };
+		42CEC5E9206EECDE00370AC0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEC5E8206EECDE00370AC0 /* GradientView.swift */; };
+		42CEC5EC206EF68600370AC0 /* imageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEC5EB206EF68600370AC0 /* imageView.swift */; };
+		42CEC5EE206EF6FE00370AC0 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEC5ED206EF6FE00370AC0 /* RoundedView.swift */; };
+		42CEC5F0206EF91500370AC0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEC5EF206EF91500370AC0 /* CircleView.swift */; };
 		42D33612205AD903003E6BD0 /* CommentsInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D33611205AD903003E6BD0 /* CommentsInventoryViewController.swift */; };
 		42D33614205AD932003E6BD0 /* CommentsInventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D33613205AD932003E6BD0 /* CommentsInventoryTableViewCell.swift */; };
 		42D3361A205AE281003E6BD0 /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D33619205AE281003E6BD0 /* HalfModalPresentationController.swift */; };
@@ -101,6 +105,10 @@
 		42A3DEA12059BBB8007B416E /* InventoryImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImageViewController.swift; sourceTree = "<group>"; };
 		42A3DEA32059BC39007B416E /* InventoryImagesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImagesPageViewController.swift; sourceTree = "<group>"; };
 		42A3DEA52059C3A2007B416E /* InventoryImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImageHeaderView.swift; sourceTree = "<group>"; };
+		42CEC5E8206EECDE00370AC0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		42CEC5EB206EF68600370AC0 /* imageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageView.swift; sourceTree = "<group>"; };
+		42CEC5ED206EF6FE00370AC0 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		42CEC5EF206EF91500370AC0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		42D33611205AD903003E6BD0 /* CommentsInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInventoryViewController.swift; sourceTree = "<group>"; };
 		42D33613205AD932003E6BD0 /* CommentsInventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInventoryTableViewCell.swift; sourceTree = "<group>"; };
 		42D33619205AE281003E6BD0 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
@@ -173,6 +181,7 @@
 		4224434B20586AD3007F887F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				42CEC5EA206EF66A00370AC0 /* OtherViews */,
 				42A3DEAF205A69E6007B416E /* CommentsInventoryCell */,
 				42A3DE962059A8DE007B416E /* Detail Inventory View */,
 				4239FF8A20559723003A0999 /* MenuTableViewCell.swift */,
@@ -313,6 +322,17 @@
 				42D33613205AD932003E6BD0 /* CommentsInventoryTableViewCell.swift */,
 			);
 			path = CommentsInventoryCell;
+			sourceTree = "<group>";
+		};
+		42CEC5EA206EF66A00370AC0 /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+				42CEC5E8206EECDE00370AC0 /* GradientView.swift */,
+				42CEC5EB206EF68600370AC0 /* imageView.swift */,
+				42CEC5ED206EF6FE00370AC0 /* RoundedView.swift */,
+				42CEC5EF206EF91500370AC0 /* CircleView.swift */,
+			);
+			path = OtherViews;
 			sourceTree = "<group>";
 		};
 		B6209BABF1DEEDA90FF78BEF /* Frameworks */ = {
@@ -638,9 +658,11 @@
 			files = (
 				42A3DE9A2059A912007B416E /* MapTableViewCell.swift in Sources */,
 				4239FF5C205595C7003A0999 /* OnRoute.xcdatamodeld in Sources */,
+				42CEC5E9206EECDE00370AC0 /* GradientView.swift in Sources */,
 				42A3DE8F2058F392007B416E /* NewsInventoryCollectionViewController.swift in Sources */,
 				4239FF89205596E0003A0999 /* MenuViewController.swift in Sources */,
 				4239FF8E2055A7E1003A0999 /* CartViewController.swift in Sources */,
+				42CEC5F0206EF91500370AC0 /* CircleView.swift in Sources */,
 				42A3DEA22059BBB8007B416E /* InventoryImageViewController.swift in Sources */,
 				42A3DE8D2058F38A007B416E /* Post.swift in Sources */,
 				42D33620205AE288003E6BD0 /* HalfModalTransitioningDelegate.swift in Sources */,
@@ -658,6 +680,8 @@
 				4239FF54205595C6003A0999 /* AppDelegate.swift in Sources */,
 				4239FF87205595E3003A0999 /* SWRevealViewController.m in Sources */,
 				42D3361E205AE288003E6BD0 /* HalfModalInteractiveTransition.swift in Sources */,
+				42CEC5EC206EF68600370AC0 /* imageView.swift in Sources */,
+				42CEC5EE206EF6FE00370AC0 /* RoundedView.swift in Sources */,
 				42D33612205AD903003E6BD0 /* CommentsInventoryViewController.swift in Sources */,
 				42D33622205AE2C6003E6BD0 /* AppNavController.swift in Sources */,
 				42A3DE982059A905007B416E /* SellerTableViewCell.swift in Sources */,
